@@ -1,0 +1,10 @@
+# Nmap 7.93 scan initiated Thu Apr 13 23:06:18 2023 as: nmap -sC -sV -oN recon/inital.nmap 10.10.63.253
+Nmap scan report for 10.10.63.253
+Host is up (0.16s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    PHP cli server 5.5 or later (PHP 8.1.0-dev)
+|_http-title:  Admin Dashboard
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr 13 23:06:54 2023 -- 1 IP address (1 host up) scanned in 35.07 seconds

@@ -1,0 +1,18 @@
+# Nmap 7.93 scan initiated Fri Apr  7 23:34:18 2023 as: nmap -sC -sV -oN recon/initial.nmap 10.10.165.30
+Nmap scan report for 10.10.165.30
+Host is up (0.18s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE    SERVICE VERSION
+22/tcp  open     ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 340efe0612673ea4ebab7ac4816dfea9 (RSA)
+|   256 49611ef4526e7b2998db302d16edf48b (ECDSA)
+|_  256 b860c45bb7b2d023a0c756595c631ec4 (ED25519)
+80/tcp  open     http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: House of danak
+179/tcp filtered bgp
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  7 23:34:53 2023 -- 1 IP address (1 host up) scanned in 34.81 seconds
