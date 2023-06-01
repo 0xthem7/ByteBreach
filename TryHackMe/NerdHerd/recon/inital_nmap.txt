@@ -1,0 +1,54 @@
+# Nmap 7.93 scan initiated Wed Apr 26 21:29:04 2023 as: nmap -sC -sV -oN recon/inital_nmap.txt 10.10.189.189
+Nmap scan report for 10.10.189.189
+Host is up (0.21s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         vsftpd 3.0.3
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x    3 ftp      ftp          4096 Sep 11  2020 pub
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.8.37.159
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+22/tcp  open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 0c841b36b2a2e111dd6aef427b0dbb43 (RSA)
+|   256 e25d9ee728ead3ddd4cc2086a3df23b8 (ECDSA)
+|_  256 ecbe237ba94c2185bca8db0e7c39de49 (ED25519)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+Service Info: Host: NERDHERD; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: nerdherd
+|   NetBIOS computer name: NERDHERD\x00
+|   Domain name: \x00
+|   FQDN: nerdherd
+|_  System time: 2023-04-26T18:44:41+03:00
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+|_nbstat: NetBIOS name: NERDHERD, NetBIOS user: <unknown>, NetBIOS MAC: 000000000000 (Xerox)
+| smb2-time: 
+|   date: 2023-04-26T15:44:40
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_clock-skew: mean: -1h00m01s, deviation: 1h43m53s, median: -2s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 26 21:30:02 2023 -- 1 IP address (1 host up) scanned in 57.34 seconds

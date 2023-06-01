@@ -1,0 +1,15 @@
+# Nmap 7.93 scan initiated Thu May  4 22:42:24 2023 as: nmap -sC -sV -p 22,80 -oN recon/inital.nmap 10.10.123.174
+Nmap scan report for 10.10.123.174
+Host is up (0.19s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 300f388d3bbe67f3e0caeb1c93ad1586 (RSA)
+|   256 4609662b1fd1b93cd7e1730f2f334f74 (ECDSA)
+|_  256 a8430ed2c1a9d114e09531a16294ed44 (ED25519)
+80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Dog Gallery!
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu May  4 22:42:43 2023 -- 1 IP address (1 host up) scanned in 19.85 seconds
