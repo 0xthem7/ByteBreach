@@ -12,7 +12,7 @@ Visit to <a href="https://gchq.github.io/CyberChef/" target="_blank">Cyberchef</
 * Put in the Input Field
 * Click on Bake
 
-** Seems like something went wrong
+**Seems like something went wrong
 
 * Lets decode in parts
 ```
