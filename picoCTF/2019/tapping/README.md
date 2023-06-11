@@ -28,5 +28,5 @@ Visit to <a href="https://gchq.github.io/CyberChef/" target="_blank">Cyberchef</
 * ADD } -> } -> PICOCTF{REDACTED}
 
 **BOOM we got the flag**
-<p style="color : green">0xthem7</code>
+<code style="color : green">0xthem7</code>
 
