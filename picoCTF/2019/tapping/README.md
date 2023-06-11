@@ -4,7 +4,7 @@ Netcat the link and save the tapping file
 ```
 nc jupiter.challenges.picoctf.org 21610 | tee tapping.txt
 ```
-Visit to [Cyberchef](https://gchq.github.io/CyberChef/) website and search for **From Morse Code**
+Visit to <a href="https://gchq.github.io/CyberChef/" target="_blank">Cyberchef</a> website and search for **From Morse Code**
 ```
 .--. .. -.-. --- -.-. - ..-. { -- ----- .-. ... ...-- -.-. ----- -.. ...-- .---- ... ..-. ..- -. ...-- ----. ----- ..--- ----- .---- ----. ..... .---- ----. }
 ```
