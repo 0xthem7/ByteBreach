@@ -12,7 +12,7 @@ Visit to <a href="https://gchq.github.io/CyberChef/" target="_blank">Cyberchef</
 * Put in the Input Field
 * Click on Bake
 
-**Seems like something went wrong
+**Seems like something went wrong**
 
 * Lets decode in parts
 ```
@@ -28,5 +28,5 @@ Visit to <a href="https://gchq.github.io/CyberChef/" target="_blank">Cyberchef</
 * ADD } -> } -> PICOCTF{REDACTED}
 
 **BOOM we got the flag**
-<code style="color : green">0xthem7</code>
+<p style="color : green">0xthem7</code>
 
