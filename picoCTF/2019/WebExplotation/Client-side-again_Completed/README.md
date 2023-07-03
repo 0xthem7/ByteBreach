@@ -12,4 +12,9 @@
     * picbrowser is the broswer type
     * grpe picoCTF is to find and print the flag
     * cut -d ">" -f5 to cut the output of curl grepped by grep with delimeter > and select fifth element
-    * cut -d "<" -d -f1 to filter out the flag last time 
+    * cut -d "<" -d -f1 to filter out the flag last time
+
+## Solving by using get-flag script 
+
+`chmod u+x get-flag.sh`
+`./get-flag.sh` 
