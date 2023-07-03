@@ -1,0 +1,11 @@
+# Nmap 7.94 scan initiated Mon Jun 19 23:42:13 2023 as: nmap --open -oN recon/open-port.txt 10.10.224.42
+Nmap scan report for 10.10.224.42
+Host is up (0.18s latency).
+Not shown: 570 closed tcp ports (conn-refused), 427 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+3306/tcp open  mysql
+
+# Nmap done at Mon Jun 19 23:42:34 2023 -- 1 IP address (1 host up) scanned in 21.33 seconds
