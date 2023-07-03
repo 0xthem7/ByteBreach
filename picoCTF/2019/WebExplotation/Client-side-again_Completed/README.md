@@ -16,5 +16,5 @@
 
 ## Solving by using get-flag script 
 
-`chmod u+x get-flag.sh`
-`./get-flag.sh` 
+# `chmod u+x get-flag.sh`
+# `./get-flag.sh` 
